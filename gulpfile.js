@@ -25,7 +25,7 @@ gulp.task('workflow', function() {
             browsers: ['last 2 versions'],
             cascade: false
         })) // autoprefix to last two browser versions
-//        .pipe(cssnano()) // set up minifying
+        .pipe(cssnano()) // set up minifying
         .pipe(sourcemaps.write('./')) // write sourcemaps
     .pipe(gulp.dest('./app/css/'))
     // refresh

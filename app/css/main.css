@@ -398,6 +398,7 @@ html, body {
   height: 100%; }
 
 a {
+  color: #FFF;
   font-weight: 300;
   text-decoration: none; }
   a:visited {
@@ -422,9 +423,6 @@ h1 {
 
 p {
   margin: 0; }
-
-footer {
-  display: none; }
 
 .wrapper {
   margin: 0 auto;
@@ -476,5 +474,15 @@ footer {
       .content__btn {
         font-size: 1.25rem;
         padding: 21px 59px; } }
+
+footer {
+  bottom: 0;
+  font-weight: 300;
+  margin-bottom: 5px;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+  footer p:first-of-type {
+    margin-bottom: 19px; }
 
 /*# sourceMappingURL=main.css.map */

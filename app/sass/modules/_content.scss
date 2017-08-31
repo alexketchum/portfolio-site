@@ -41,6 +41,11 @@
         text-transform: uppercase;
         padding: 15px 30px;
         
+        &:hover {
+            border: 1px solid #DDD;
+            color: #DDD;
+        }
+        
         @include atSmall {
             font-size: 1.15rem;
         }

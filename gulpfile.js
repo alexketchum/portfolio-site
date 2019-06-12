@@ -34,9 +34,10 @@ gulp.task('workflow', function() {
     }));
 });
 
-gulp.task('default', ['browserSync', 'workflow'], function() {
+
+gulp.task('default', gulp.series('browserSync', 'workflow', function() {
     gulp.watch('./app/sass/**/*.scss', ['workflow']);
     gulp.watch('./app/index.html', function() {
         browsersync.reload();
     });
-});
+}));
